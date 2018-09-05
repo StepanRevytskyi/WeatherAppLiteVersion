@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">WeatherAppLiteVersion</string>
+    <string name="app_name">Weather</string>
+    <string name="my_locate">My locate</string>
+    <string name="city_list">Other cities</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="about">About</string>
 </resources>
