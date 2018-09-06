@@ -1,4 +1,4 @@
-package com.example.arondillqs5328.weatherappliteversion.fragment;
+package com.example.arondillqs5328.weatherappliteversion.Fragment;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

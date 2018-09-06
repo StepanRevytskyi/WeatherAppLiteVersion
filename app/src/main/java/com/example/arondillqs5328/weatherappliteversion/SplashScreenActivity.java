@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.example.arondillqs5328.weatherappliteversion.activity.MainActivity;
+import com.example.arondillqs5328.weatherappliteversion.Activity.MainActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
 

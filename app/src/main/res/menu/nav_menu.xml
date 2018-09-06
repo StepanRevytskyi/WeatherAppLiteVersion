@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group>
+    <group android:checkableBehavior="single">
         <item
             android:id="@+id/my_locate"
             android:icon="@drawable/ic_home"
+            android:checked="true"
             android:title="@string/my_locate" />
+
         <item
             android:id="@+id/city_list"
             android:icon="@drawable/ic_list"
             android:title="@string/city_list" />
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings" />
 
         <item
             android:id="@+id/about"

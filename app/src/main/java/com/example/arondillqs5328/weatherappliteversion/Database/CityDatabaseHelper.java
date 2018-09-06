@@ -1,4 +1,4 @@
-package com.example.arondillqs5328.weatherappliteversion.database;
+package com.example.arondillqs5328.weatherappliteversion.Database;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

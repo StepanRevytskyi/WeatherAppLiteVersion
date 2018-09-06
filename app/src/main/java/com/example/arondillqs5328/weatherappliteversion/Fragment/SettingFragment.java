@@ -1,4 +1,4 @@
-package com.example.arondillqs5328.weatherappliteversion.fragment;
+package com.example.arondillqs5328.weatherappliteversion.Fragment;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.arondillqs5328.weatherappliteversion.R;
 
-public class MyLocateFragment extends Fragment {
+public class SettingFragment extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,6 @@ public class MyLocateFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.fragment_my_locate, container, false);
+        return inflater.inflate(R.layout.fragment_other_cities, container, false);
     }
 }

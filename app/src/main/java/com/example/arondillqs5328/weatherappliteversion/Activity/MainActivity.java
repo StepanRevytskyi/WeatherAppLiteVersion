@@ -1,4 +1,4 @@
-package com.example.arondillqs5328.weatherappliteversion.activity;
+package com.example.arondillqs5328.weatherappliteversion.Activity;
 
 import android.content.res.Configuration;
 import android.support.annotation.NonNull;
@@ -13,9 +13,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.example.arondillqs5328.weatherappliteversion.R;
-import com.example.arondillqs5328.weatherappliteversion.fragment.AboutFragment;
-import com.example.arondillqs5328.weatherappliteversion.fragment.MyLocateFragment;
-import com.example.arondillqs5328.weatherappliteversion.fragment.OtherCitiesFragment;
+import com.example.arondillqs5328.weatherappliteversion.Fragment.AboutFragment;
+import com.example.arondillqs5328.weatherappliteversion.Fragment.MyLocateFragment;
+import com.example.arondillqs5328.weatherappliteversion.Fragment.OtherCitiesFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                        menuItem.setChecked(true);
                         selectDrawerItem(menuItem);
                         return true;
                     }
