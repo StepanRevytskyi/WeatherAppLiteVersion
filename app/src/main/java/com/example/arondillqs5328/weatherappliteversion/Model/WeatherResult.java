@@ -7,6 +7,7 @@ public class WeatherResult {
     private List<Weather> weather;
     private String base;
     private Main main;
+    public int visibility;
     private Wind wind;
     private Clouds clouds;
     private int dt;

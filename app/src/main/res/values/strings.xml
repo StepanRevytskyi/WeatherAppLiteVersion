@@ -6,4 +6,9 @@
     <string name="drawer_close">Close navigation drawer</string>
     <string name="about">About</string>
     <string name="settings">Setting</string>
+    <string name="weather_icon">weather icon</string>
+    <string name="humidity">Humidity</string>
+    <string name="uv_index">UV index</string>
+    <string name="visibility">Visibility</string>
+    <string name="temp_desc">temperature</string>
 </resources>
