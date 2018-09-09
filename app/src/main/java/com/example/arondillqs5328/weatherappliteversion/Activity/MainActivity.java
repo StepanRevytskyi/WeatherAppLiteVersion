@@ -15,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.example.arondillqs5328.weatherappliteversion.Common.Common;
 import com.example.arondillqs5328.weatherappliteversion.Fragment.AboutFragment;
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         mNavigationView = findViewById(R.id.nav_view);
         setupDrawerContent(mNavigationView);
 
-        Dexter.withActivity(this)
+        Dexter.withActivity(MainActivity.this)
                 .withPermissions(Manifest.permission.ACCESS_COARSE_LOCATION,
                         Manifest.permission.ACCESS_FINE_LOCATION)
                 .withListener(new MultiplePermissionsListener() {
@@ -86,8 +87,6 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 }).check();
-
-        setFragment(MyLocateFragment.class);
     }
 
     @Override
@@ -170,8 +169,8 @@ public class MainActivity extends AppCompatActivity {
     private void buildLocationRequest() {
         mLocationRequest = new LocationRequest();
         mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-        mLocationRequest.setInterval(5000);
-        mLocationRequest.setFastestInterval(3000);
+        mLocationRequest.setInterval(1800000);
+        mLocationRequest.setFastestInterval(1000000);
         mLocationRequest.setSmallestDisplacement(10.0f);
     }
 
@@ -183,6 +182,7 @@ public class MainActivity extends AppCompatActivity {
                 super.onLocationResult(locationResult);
 
                 Common.currentLocation = locationResult.getLastLocation();
+                setFragment(MyLocateFragment.class);
             }
 
         };
